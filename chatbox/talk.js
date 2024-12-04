@@ -27,21 +27,21 @@ botui.message.bot({
 var resCircle = function(numCircle) {
 
    // 一个关于消极态度的集合
-   var negEva = ["小姐姐呐？ 🙄","我劝你善良！ 😆","搞事情是吧？ 😈","哇酷哇酷！ 😋","快把小姐姐交出来！😍","别挡着我看小姐姐 😆"]; 
-   var indexNegEva = Math.floor((Math.random()*negEva.length)); 
+   var negEva = ["小姐姐呐？ 🙄","我劝你善良！ 😆","搞事情是吧？ 😈","哇酷哇酷！ 😋","快把小姐姐交出来！😍","别挡着我看小姐姐 😆"];
+   var indexNegEva = Math.floor((Math.random()*negEva.length));
    var negText = negEva[indexNegEva];
 
    // 一个关于消极态度response的集合
-   var negResponse = ["本想介绍小姐姐给你认识，溜了溜了", "不要小姐姐了吗？", "不好意思，小姐姐归我了！", "哎，小姐姐只能独自伤心了。"]; 
-   var indexNegResponse = Math.floor((Math.random()*negResponse.length)); 
+   var negResponse = ["本想介绍小姐姐给你认识，溜了溜了", "不要小姐姐了吗？", "不好意思，小姐姐归我了！", "哎，小姐姐只能独自伤心了。"];
+   var indexNegResponse = Math.floor((Math.random()*negResponse.length));
    var negResponseText = negResponse[indexNegResponse];
 
    // 随机图链接
    var randPic = [
        "https://chevereto.hwb0307.com/images/2022/10/16/wallhaven-85x3v2.md.jpg",
 	   "https://chevereto.hwb0307.com/images/2022/10/16/wallhaven-85x3v2.md.jpg"
-   ]; 
-   var indexrandPic = Math.floor((Math.random()*randPic.length)); 
+   ];
+   var indexrandPic = Math.floor((Math.random()*randPic.length));
    var targetURL= randPic[indexrandPic];
 
    botui.action.button({
@@ -55,7 +55,7 @@ var resCircle = function(numCircle) {
            value: "gg"
        }]
    }).then(function(res){
-       if (res.value == "and") {
+       if (res.value === "and") {
            botui.message.bot({
                delay: 1500,
                content: "😘😘😘"
@@ -68,7 +68,7 @@ var resCircle = function(numCircle) {
                content: "好了，不玩啦！你甚至不想称赞我哪怕一下...哎！"
            }).then(function(){
                other()
-           })  
+           })
        } else {
            botui.message.bot({
                // loading: true,
@@ -79,7 +79,7 @@ var resCircle = function(numCircle) {
                var numCircle2 = numCircle - 1
                // console.log(numCircle)
                return resCircle(numCircle2)
-           }) 
+           })
        }
    })
 }
