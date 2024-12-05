@@ -5,11 +5,11 @@
 var botui = new BotUI("kelecnbot");
 botui.message.bot({
    delay: 200,
-   content: "Hi，小伙伴们👋👋👋"
+   content: "Hi，你好呀！👋👋"
 }).then(function() {
    return botui.message.bot({
        delay: 1000,
-       content: "我是Bensz，可以叫我苯苯！"
+       content: "欢迎来到我的小站，我是Amber😊"
    })
 }).then(function() {
    return botui.message.bot({
