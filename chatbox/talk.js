@@ -9,15 +9,13 @@ const sendButton = (actions, delay = 1500) => {
 };
 
 const resCircle = (numCircle) => {
-    const negEva = ["小姐姐呐？ 🙄", "我劝你善良！ 😆", "搞事情是吧？ 😈", "哇酷哇酷！ 😋", "快把小姐姐交出来！😍", "别挡着我看小姐姐 😆"];
-    const negResponse = ["本想介绍小姐姐给你认识，溜了溜了", "不要小姐姐了吗？", "不好意思，小姐姐归我了！", "哎，小姐姐只能独自伤心了。"];
-    const randPic = [
-        "https://api.aimer.live/random-image/wallpaper/index.php"
-    ];
+    const negEva = ["妹子呐？ 🙄", "我劝你善良！ 😆", "搞事情是吧？ 😈", "哇酷哇酷！ 😋", "快把妹子交出来！😍", "别挡着我看老婆 😆"];
+    const negResponse = ["本想介绍二次元妹子给你认识，溜了溜了", "不要妹子了吗？", "不好意思，老婆归我了！", "哎，妹子只能独自伤心了。"];
+    // const randPic = ["https://api.aimer.live/random-image/wallpaper/index.php"];
 
     const negText = negEva[Math.floor(Math.random() * negEva.length)];
     const negResponseText = negResponse[Math.floor(Math.random() * negResponse.length)];
-    const targetURL = randPic[Math.floor(Math.random() * randPic.length)];
+    const targetURL = "https://api.aimer.live/random-image/wallpaper/index.php";
 
     return sendButton([
         { text: "牛逼呀！ 😃", value: "and" },
