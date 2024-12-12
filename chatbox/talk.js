@@ -11,11 +11,16 @@ const sendButton = (actions, delay = 1500) => {
 const resCircle = (numCircle) => {
     const negEva = ["妹子呐？ 🙄", "我劝你善良！ 😆", "搞事情是吧？ 😈", "哇酷哇酷！ 😋", "快把妹子交出来！😍", "别挡着我看老婆 😆"];
     const negResponse = ["本想介绍二次元妹子给你认识，溜了溜了", "不要妹子了吗？", "不好意思，老婆归我了！", "哎，妹子只能独自伤心了。"];
-    // const randPic = ["https://api.aimer.live/random-image/wallpaper/index.php"];
+    const randPic = ["https://api.aimer.live/random-image/wallpaper/index.php",
+        "https://www.loliapi.com/acg/?id=1",
+        "https://www.loliapi.com/acg/?id=2",
+        "https://www.loliapi.com/acg/?id=3",
+        "https://www.loliapi.com/acg/?id=4",
+        "https://www.loliapi.com/acg/"];
 
     const negText = negEva[Math.floor(Math.random() * negEva.length)];
     const negResponseText = negResponse[Math.floor(Math.random() * negResponse.length)];
-    const targetURL = "https://api.aimer.live/random-image/wallpaper/index.php";
+    const targetURL = randPic[Math.floor(Math.random() * randPic.length)];
 
     return sendButton([
         { text: "牛逼呀！ 😃", value: "and" },
@@ -26,7 +31,7 @@ const resCircle = (numCircle) => {
         } else if (numCircle === 0) {
             return sendMessage("好了，不玩啦！你甚至不想称赞我哪怕一下...哎！").then(other);
         } else {
-            return sendMessage(negResponseText + '<br /><img src="' + targetURL + '" width="500" alt="anime">', 3000, 'html')
+            return sendMessage(`${negResponseText}<br /><img src="${targetURL}" width="500" alt="anime">`, 1500, 'html')
                 .then(() => resCircle(numCircle - 1));
         }
     });
@@ -57,4 +62,4 @@ const other = () => {
 sendMessage("Hi，你好呀！👋👋", 200)
     .then(() => sendMessage("欢迎来到我的小站，我是Amber😊", 1000))
     .then(() => sendMessage("是一个每天在镜子前给自己磕头的硬核...咳咳！", 1000))
-    .then(() => resCircle(8));
+    .then(() => resCircle(3));
