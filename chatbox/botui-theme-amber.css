@@ -42,7 +42,7 @@
     }
     .botui-actions-buttons-button{
         border:0;
-        color:#fff;
+        color:#fff !important;
         line-height:1;
         cursor:pointer;
         font-size:14px;
