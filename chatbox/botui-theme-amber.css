@@ -53,6 +53,20 @@
         background:#777979;
         box-shadow:2px 3px 4px 0 rgba(0,0,0,.25)
     }
+    /* 主题中手动切换时候的样式 */
+    body.dark {
+        .popcontainer p {
+            color: #595a5a;
+        }
+        .botui-message-content.human {
+            color: #f7f8f8;
+            /* 点击者内容背景色 */
+            background-color: #FFB6C1;
+        }
+        .botui-actions-buttons-button {
+            background: #FFB6C1;
+        }
+    }
 }
 
 .botui-messages-container{
