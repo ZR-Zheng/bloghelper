@@ -9,8 +9,8 @@ const sendButton = (actions, delay = 1500) => {
 };
 
 const resCircle = (numCircle) => {
-    const negEva = ["妹子呐？ 🙄", "我劝你善良！ 😆", "搞事情是吧？ 😈", "哇酷哇酷！ 😋", "快把妹子交出来！😍", "别挡着我看老婆 😆"];
-    const negResponse = ["本想介绍二次元妹子给你认识，溜了溜了", "不要妹子了吗？", "不好意思，老婆归我了！", "哎，妹子只能独自伤心了。"];
+    const negEva = ["来点二次元！ 😊", "我劝你善良！ 😆", "搞事情是吧？ 😈", "哇酷哇酷！ 😋", "快把我老婆交出来！😍", "别挡着我看老婆 😆"];
+    const negResponse = ["介绍我老婆给你认识下~", "可爱吧 Ciallo～(∠・ω< )⌒☆", "不好意思，老婆归我了！", "哎，我老婆真好看。"];
     const randPic = ["https://api.aimer.live/random-image/wallpaper/index.php",
         "https://www.loliapi.com/acg/?id=1",
         "https://www.loliapi.com/acg/?id=2",
