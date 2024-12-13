@@ -31,7 +31,7 @@ const resCircle = (numCircle) => {
         } else if (numCircle === 0) {
             return sendMessage("好了，不玩啦！你甚至不想称赞我哪怕一下...哎！").then(other);
         } else {
-            return sendMessage(`${negResponseText}<br /><img src="${targetURL}" width="500" alt="anime">`, 1500, 'html')
+            return sendMessage(`${negResponseText}<br /><img src="${targetURL}" class="responsive-img" alt="anime">`, 1500, 'html')
                 .then(() => resCircle(numCircle - 1));
         }
     });

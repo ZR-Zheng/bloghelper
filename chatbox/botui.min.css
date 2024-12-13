@@ -37,6 +37,7 @@ input.botui-actions-text-input::-moz-focus-inner {
 button.botui-actions-buttons-button {
     cursor: pointer;
     -webkit-appearance: button;
+    appearance: button;
 }
 
 .botui-app-container {
@@ -75,6 +76,11 @@ button.botui-actions-buttons-button {
     width: auto;
     max-width: 75%;
     display: inline-block;
+}
+
+.botui-message-content.html .responsive-img {
+    max-width: 100%;
+    height: auto;
 }
 
 .botui-message-content.human {
