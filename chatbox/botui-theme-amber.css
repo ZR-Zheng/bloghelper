@@ -11,7 +11,7 @@
 /* 夜间模式 */
 @media (prefers-color-scheme: dark) {
     .popcontainer p {
-        color: #595a5a;
+        color: #595a5a !important;
     }
     .botui-message-content.human {
         color:#f7f8f8;
@@ -20,7 +20,7 @@
     }
     .botui-actions-buttons-button{
         border:0;
-        color:#fff;
+        color:#fff !important;
         line-height:1;
         cursor:pointer;
         font-size:14px;
