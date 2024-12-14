@@ -1,7 +1,7 @@
 {
 	"type": "Live2D Model Setting",
 	"name": "model",
-	"label":"Platelet",
+	"label":"xiaoban",
 	"model": "model.moc",
 	"textures": [
 		"model.2048/texture_00.png"
