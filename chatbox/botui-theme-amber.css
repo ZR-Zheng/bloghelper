@@ -56,7 +56,7 @@
     /* 主题中手动切换时候的样式 */
     body.dark {
         .popcontainer p {
-            color: #595a5a;
+            color: #595a5a !important;
         }
         .botui-message-content.human {
             color: #f7f8f8;
