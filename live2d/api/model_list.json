@@ -1,0 +1,12 @@
+{
+    "models": [
+        "xiaoban",
+        "bilibili-live/22",
+        "bilibili-live/33"
+    ],
+    "messages": [
+        "血小板来帮你哦 ~",
+        "来自 Bilibili Live 的 22 哦 ~",
+        "来自 Bilibili Live 的 33 的说"
+    ]
+}
