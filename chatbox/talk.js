@@ -29,7 +29,7 @@ const resCircle = (numCircle) => {
         if (res.value === "and") {
             return sendMessage("😘😘😘").then(other);
         } else if (numCircle === 0) {
-            return sendMessage("好了，不玩啦！你甚至不想称赞我哪怕一下...哎！").then(other);
+            return sendMessage("好了，不玩啦！").then(other);
         } else {
             return sendMessage(`${negResponseText}<br /><img src="${targetURL}" class="responsive-img" alt="anime">`, 1500, 'html')
                 .then(() => resCircle(numCircle - 1));
@@ -45,13 +45,13 @@ const other = () => {
         .then(() => sendMessage("目前正作为社畜在社会上艰难求生..."))
         .then(() => sendButton([{ text: "为什么叫 Amber 呢？ 🤔", value: "next" }]))
         .then(() => sendMessage("很久以前，我很喜欢日本歌手Aimer，于是便化用作为自己的英文名，这个域名也是在那个时候注册的。"))
-        .then(() => sendMessage("后来工作的时候不知怎的就变成Amber了(～￣▽￣)～ "))
+        .then(() => sendMessage("后来工作的时候不知怎么的就变成Amber了(～￣▽￣)～ "))
         .then(() => sendButton([{ text: "没有想过更换域名吗？(ง •_•)ง", value: "next" }]))
-        .then(() => sendMessage("没有计划，至今Aimer仍是我的最爱。"))
+        .then(() => sendMessage("暂时没有这个计划吧，其一域名买了十年，其二Aimer至今仍是我的最爱。"))
         .then(() => sendButton([{ text: "您未来有什么计划吗？", value: "next" }]))
-        .then(() => sendMessage("求思，求索，回到象牙塔。"))
-        .then(() => sendMessage("更加爱家人、爱世界！"))
-        .then(() => sendButton([{ text: "您是不是漏了什么没说呀？（暗示）", value: "next" }]))
+        .then(() => sendMessage("求思，求索，寻找自己的未来，做一个有担当的人。"))
+        .then(() => sendMessage("没有读过研究生的人生是不完整的，我一定会回去的！"))
+        .then(() => sendButton([{ text: "您是不是漏了什么没说呀？", value: "next" }]))
         .then(() => sendMessage("对对，光顾着说自己了 (～￣▽￣)～ "))
         .then(() => sendMessage("祝您身体健康、心想事成、前程似锦喽！"))
         .then(() => sendButton([{ text: "谢谢哈！那么如何支持您的工作呢？", value: "next" }]))
