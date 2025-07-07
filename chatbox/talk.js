@@ -23,8 +23,8 @@ const resCircle = (numCircle) => {
     const targetURL = randPic[Math.floor(Math.random() * randPic.length)];
 
     return sendButton([
-        { text: "牛逼呀！ 😃", value: "and" },
-        { text: negText, value: "gg" }
+        { text: "牛逼呀！ 😃", value: "and" }
+        // { text: negText, value: "gg" }
     ]).then(res => {
         if (res.value === "and") {
             return sendMessage("😘😘😘").then(other);
