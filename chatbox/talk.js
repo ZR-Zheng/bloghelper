@@ -50,7 +50,7 @@ const other = () => {
         .then(() => sendMessage("暂时没有这个计划吧，其一域名买了十年，其二Aimer至今仍是我的最爱。"))
         .then(() => sendButton([{ text: "您未来有什么计划吗？", value: "next" }]))
         .then(() => sendMessage("求思，求索，寻找自己的未来，做一个有担当的人。"))
-        .then(() => sendMessage("没有读过研究生的人生是不完整的，我一定会回去的！"))
+        // .then(() => sendMessage("没有读过研究生的人生是不完整的，我一定会回去的！"))
         .then(() => sendButton([{ text: "您是不是漏了什么没说呀？", value: "next" }]))
         .then(() => sendMessage("对对，光顾着说自己了 (～￣▽￣)～ "))
         .then(() => sendMessage("祝您身体健康、心想事成、前程似锦喽！"))
